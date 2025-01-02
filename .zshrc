@@ -53,6 +53,10 @@ if [[ -s "$HOME/.asdf/asdf.sh" ]]; then
   . "$HOME/.asdf/asdf.sh"
 fi
 
+if [[ -s "$(brew --prefix asdf)/libexec/asdf.sh" ]]; then
+  . "$(brew --prefix asdf)/libexec/asdf.sh"
+fi
+
 # # AWS
 # if [[ -s "/usr/local/bin/aws_zsh_completer.sh" ]]; then
 #   source /usr/local/bin/aws_zsh_completer.sh
